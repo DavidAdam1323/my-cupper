@@ -1,1 +1,112 @@
+/* General */
+:root {
+  --primary: #227492;
+  --secondary: #85bed3;
+  --light: #f4a460;
+  --white: #f5f5dc;
+  --dark: #3e2723;
+  --text: #333;
+  --transition: all 0.3s ease;
+}
 
+body {
+  font-family: "Delius", cursive;
+  line-height: 1.6;
+}
+
+.navbar {
+  padding: 20px 0;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+section {
+  padding: 80px 0;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+p {
+  margin-bottom: 15px;
+}
+
+.btn {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  background-color: var(--primary);
+  border: 2px solid var(--secondary);
+  border-radius: 10px;
+  color: var(--white);
+  padding: 12px 30px;
+  transition: var(--transition);
+}
+
+.btn:hover {
+  transform: scale(1.08);
+  border: 2px solid var(--dark);
+  color: var(--dark);
+  box-shadow: 0 1px 10px rgba(255, 255, 255, 0.1);
+}
+
+/* Navbar */
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+/* Hero section */
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("/assets/images/hero-image.jpeg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+.hero-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeUp 2s ease-out forwards;
+}
+
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero h1 {
+  font-family: "Fascinate Inline", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 50px;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.hero p {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
