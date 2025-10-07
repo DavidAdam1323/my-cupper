@@ -89,7 +89,7 @@ section {
 /*  Hero Section - Starts Here  */
 .hero {
   background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
-    url("/assets/images/hero-image.jpg");
+    url("../assets/images/hero-image.jpg");
   background-size: cover;
   background-position: center;
   height: 100vh;
