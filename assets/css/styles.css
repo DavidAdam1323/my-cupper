@@ -55,7 +55,7 @@ section {
 .navbar-brand span,
 .offcanvas-title span {
   color: var(--coffee-accent) !important;
-} 
+}
 
 .navbar-nav .nav-link {
   color: var(--coffee-light) !important;
@@ -74,7 +74,6 @@ section {
   border: none !important;
   font-size: 2rem;
   padding: 0;
-
 }
 
 .navbar-toggler:focus {
@@ -87,7 +86,7 @@ section {
   margin-left: 0 !important;
 }
 
-/*  Hero Section  */
+/*  Hero Section - Starts Here  */
 .hero {
   background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
     url("/assets/images/hero-image.jpg");
@@ -151,4 +150,24 @@ section {
   background-color: var(--coffee-accent) !important;
   transform: translateY(-5px) scale(1.05);
   box-shadow: 0 6px 15px rgba(179, 178, 178, 0.2);
+}
+
+/* About Section - Starts Here */
+.about {
+  scroll-margin-top: 55px; 
+}
+
+.section-title {
+  font-family: "Diplomata", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.section-title::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 3px;
+  background-color: var(--coffee-accent);
+  margin: 15px auto;
 }
