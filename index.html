@@ -78,7 +78,7 @@
         <div class="about-content row align-items-center">
 
           <!-- About Text -->
-          <div class="about-text col-12 col-xl-6 order-2 order-md-1">
+          <div class="about-text col-xl-6 order-2 order-md-1">
             <p>
               Welcome to "My Cupper" coffee shop, brought to life in 2025. 
               We beleive in the power of connection, the importance 
@@ -112,8 +112,28 @@
           </div>
 
           <!-- About Image -->
-          <div class="about-image col-12 col-xl-6 mb-4 mb-md-0 order-1 order-md-2">
-            <img src="./assets/images/about-image.jpg" alt="" class="img-fluid d-block w-100 rounded overflow-hidden shadow-lg">
+          <div class="about-image col-xl-6 mb-4 mb-md-0 order-1 order-md-2">
+            <div id="carouselExampleFade" class="carousel slide carousel-fade">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="./assets/images/about-image.jpg" alt="" class="img-fluid d-block w-100 rounded overflow-hidden shadow-lg">
+                </div>
+                <div class="carousel-item">
+                  <img src="./assets/images/cafe-area1.jpg" alt="" class="img-fluid d-block w-100 rounded overflow-hidden shadow-lg">
+                </div>
+                <div class="carousel-item">
+                  <img src="./assets/images/cafe-area2.jpg" alt="" class="img-fluid d-block w-100 rounded overflow-hidden shadow-lg">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
           </div>
         </div>
       </div>
