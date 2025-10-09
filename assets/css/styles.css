@@ -1,4 +1,4 @@
-/* General */
+/* GENERAL STYLES */
 :root {
   --coffee-dark: #131d4f;
   --coffee-primary: #254d70;
@@ -37,6 +37,7 @@ section {
   scroll-margin-top: 55px;
 }
 
+/* Shared Typography */
 .form-label,
 .form-select,
 .contact-btn,
@@ -45,7 +46,27 @@ section {
   font-family: Arial, Helvetica, sans-serif !important;
 }
 
-/* Navbar */
+/* Section Backgrounds */
+.about,
+.location {
+  background-color: white;
+}
+
+/* Buttons */
+.btn {
+  color: var(--coffee-light) !important;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  padding: 14px 0;
+  transition: var(--transition);
+}
+
+.btn:hover {
+  background-color: var(--coffee-primary) !important;
+  transform: translateY(-5px);
+}
+
+/* NAVBAR */
 .navbar {
   background-color: var(--coffee-dark);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
@@ -108,7 +129,7 @@ section {
   margin-left: 0 !important;
 }
 
-/*  Hero Section - Starts Here  */
+/* HERO SECTION */
 .hero {
   background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
     url("../images/hero-image.jpg");
@@ -130,18 +151,6 @@ section {
   animation: fadeUp 2s ease-out forwards;
 }
 
-/* Animations */
-@keyframes fadeUp {
-  0% {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
 .hero h1 {
   font-family: "Fascinate Inline", system-ui;
   font-size: 56px;
@@ -158,23 +167,26 @@ section {
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
 }
 
-/* Hero Button */
 .hero .btn {
-  border: 2px solid var(--coffee-light);
-  color: var(--coffee-light);
+  border: 0.5px solid var(--coffee-light);
+  width: 200px !important;
   padding: 14px 32px;
-  font-weight: 600;
-  border-radius: 12px;
   transition: var(--transition);
 }
 
-.hero .btn:hover {
-  background-color: var(--coffee-accent) !important;
-  transform: translateY(-5px) scale(1.05);
-  box-shadow: 0 6px 15px rgba(179, 178, 178, 0.2);
+/* ANIMATIONS */
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-/* About Section - Starts Here */
+/* ABOUT SECTION */
 .section-title {
   font-family: "Bona Nova SC", serif;
   font-weight: 400;
@@ -204,7 +216,7 @@ section {
   }
 }
 
-/* Menu Section - Starts Here */
+/* MENU SECTION */
 .card-img-top {
   width: 100%;
   height: 200px;
@@ -224,11 +236,10 @@ section {
 
 .card:hover {
   transform: translateY(-5px);
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
-    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  box-shadow: var(--shadow);
 }
 
-/* Location Section - Starts Here */
+/* LOCATION SECTION */
 .location-info-container h3 {
   font-family: "Fascinate Inline", cursive;
 }
@@ -242,10 +253,13 @@ section {
   transform: scale(1.2);
 }
 
-/* Contact Section - Starts Here */
-.contact-info h3,
-.contact-info-item h4 {
+/* CONTACT SECTION */
+.contact-info h3 {
   font-family: "Fascinate Inline", cursive;
+}
+
+.contact-info-item h4 {
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .contact-info-item i {
@@ -270,13 +284,7 @@ section {
   border: 2.5px solid var(--coffee-primary);
 }
 
-.contact-btn:hover {
-  transform: translateY(-3px);
-  box-shadow: var(--shadow);
-  background-color: var(--coffee-primary) !important;
-}
-
-/* Footer Section - Starts Here */
+/* FOOTER SECTION */
 .footer-column h3 {
   color: var(--coffee-muted) !important;
 }
